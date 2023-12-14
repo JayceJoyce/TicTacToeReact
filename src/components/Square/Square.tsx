@@ -8,7 +8,8 @@ export default function Square(props:SquareProps){
      <>
       {
         <button 
-        className="square ticToeCross"
+        key={props.id}
+        className={`square ticToeCross ${props.id}`}
         onClick={props.onSquareClick}
         >
           {props.value}
